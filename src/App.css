@@ -5,3 +5,8 @@
   background-clip: text;
   color: transparent;
 }
+
+.active_btn {
+  background: linear-gradient(to right, #4f39f6, #9514fa);
+  color: white;
+}
