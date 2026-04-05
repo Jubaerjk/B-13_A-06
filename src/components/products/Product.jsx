@@ -2,10 +2,11 @@ import { use, useState } from 'react'
 import AllProduct from './productType/AllProduct'
 import CartProduct from './productType/CartProduct'
 
-const Product = ({ productDataPromise, setCartNav }) => {
+const Product = ({ productDataPromise, cartNav, setCartNav }) => {
     const productCard = use(productDataPromise);
 
     const [activeTab, setActiveTab] = useState('allProduct');
+    const [selectedProduct, setSelectedProduct] = useState([]);
 
     return (
         <>
@@ -19,16 +20,16 @@ const Product = ({ productDataPromise, setCartNav }) => {
                 </p>
                 <div className='flex gap-4 justify-center'>
                     <button onClick={() => setActiveTab('allProduct')} className={`btn btn-sm ${activeTab === 'allProduct' ? 'active_btn' : 'bg-[#E1E7FF] text-[#9514FA]'} rounded-full`}>All Products <span>({productCard.length})</span></button>
-                    <button onClick={() => setActiveTab('cartProduct')} className={`btn btn-sm ${activeTab === 'cartProduct' ? 'active_btn' : 'bg-[#E1E7FF] text-[#9514FA]'} rounded-full`}>Cart <span>{productCard.length}</span></button>
+                    <button onClick={() => setActiveTab('cartProduct')} className={`btn btn-sm ${activeTab === 'cartProduct' ? 'active_btn' : 'bg-[#E1E7FF] text-[#9514FA]'} rounded-full`}>Cart <span>({cartNav})</span></button>
                 </div>
             </div>
 
             {/* Product Card Section */}
 
             {activeTab === 'allProduct' ? (
-                <AllProduct productCard={productCard} setCartNav={setCartNav} />
+                <AllProduct productCard={productCard} setCartNav={setCartNav} selectedProduct={selectedProduct} setSelectedProduct={setSelectedProduct} />
             ) : (
-                <CartProduct cartProduct={productCard} />
+                <CartProduct selectedProduct={selectedProduct} cartNav={cartNav} setCartNav={setCartNav} setSelectedProduct={setSelectedProduct} />
             )}
 
 

@@ -1,8 +1,17 @@
 import React, { useState } from 'react'
 
-const Card = ({ productCard, setCartNav }) => {
+const Card = ({ productCard, setCartNav, selectedProduct, setSelectedProduct }) => {
     const { name, description, price, period, tagType, features, icon } = productCard;
+
+    // For Card Button State
     const [addedToCart, setAddedToCart] = useState(false);
+
+    // For Card Button Click
+    const handleAddToCart = () => {
+        setAddedToCart(!addedToCart);
+        setSelectedProduct([...selectedProduct, productCard]);
+        setCartNav(prev => prev + 1);
+    }
 
     return (
         <>
@@ -37,7 +46,7 @@ const Card = ({ productCard, setCartNav }) => {
                     </ul>
 
                     <button
-                        onClick={() => { setAddedToCart(!addedToCart); setCartNav(prev => prev + 1) }}
+                        onClick={handleAddToCart}
                         className={`btn rounded-full btn-block ${addedToCart ? 'bg-[#E1E7FF] text-[#9514FA]' : 'active_btn'}`}
                         disabled={addedToCart}>
                         {addedToCart ? 'Added to Cart' : 'Add to Cart'}

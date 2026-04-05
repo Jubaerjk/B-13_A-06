@@ -8,29 +8,24 @@ import Process from './components/process/Process'
 import Pricing from './components/pricing/Pricing'
 
 
-// const fetchPricingCardData = async () => {
-//   const res = await fetch('/pricingCard.json');
-//   return res.json();
-// }
-
+// Fetching data from JSON files
+const fetchPricingCardData = async () => {
+  const res = await fetch('/pricingCard.json');
+  return res.json();
+}
 const fetchCardData = fetch('/cardData.json')
   .then(res => res.json())
 
 
 
 
-
-// const pricingCardData = fetch('/pricingCard.json')
-//   .then(res => res.json())
-
-
-
-
 function App() {
+
   // Promises
   const productDataPromise = fetchCardData;
-  // const pricingDataPromise = fetchPricingCardData;
+  const pricingDataPromise = fetchPricingCardData();
 
+  // States
   const [cartNav, setCartNav] = useState(0);
 
 
@@ -45,14 +40,14 @@ function App() {
 
       <Suspense
         fallback={<div><span className="loading loading-spinner text-accent"></span></div>}>
-        <Product productDataPromise={productDataPromise} setCartNav={setCartNav} />
+        <Product productDataPromise={productDataPromise} cartNav={cartNav} setCartNav={setCartNav} />
       </Suspense>
 
-      {/* <Process /> */}
+      <Process />
 
-      {/* <Suspense fallback={<div><span className="loading loading-spinner text-accent"></span></div>}>
+      <Suspense fallback={<div><span className="loading loading-spinner text-accent"></span></div>}>
         <Pricing pricingDataPromise={pricingDataPromise} />
-      </Suspense> */}
+      </Suspense>
 
     </>
   )

@@ -3,7 +3,7 @@
         "id": 1,
         "name": "AI Writing Pro",
         "description": "Advanced AI-powered writing assistant for blogs, emails, and creative content.",
-        "price": "$19",
+        "price": "19",
         "period": "month",
         "tagType": "Pro",
         "features": [
@@ -18,7 +18,7 @@
         "id": 2,
         "name": "Automation Toolkit",
         "description": "Streamline workflows with automated task scheduling and integrations.",
-        "price": "$29",
+        "price": "29",
         "period": "month",
         "tagType": "Toolkit",
         "features": [
@@ -33,7 +33,7 @@
         "id": 3,
         "name": "Design Studio",
         "description": "Create stunning visuals and mockups with easy-to-use design tools.",
-        "price": "$15",
+        "price": "15",
         "period": "month",
         "tagType": "Creative",
         "features": [
@@ -48,7 +48,7 @@
         "id": 4,
         "name": "Data Insights",
         "description": "Turn raw data into actionable insights with powerful analytics.",
-        "price": "$39",
+        "price": "39",
         "period": "month",
         "tagType": "Analytics",
         "features": [
@@ -63,7 +63,7 @@
         "id": 5,
         "name": "Marketing Booster",
         "description": "Boost campaigns with AI-driven targeting and performance tracking.",
-        "price": "$25",
+        "price": "25",
         "period": "month",
         "tagType": "Marketing",
         "features": [
@@ -78,7 +78,7 @@
         "id": 6,
         "name": "Secure Cloud",
         "description": "Reliable cloud storage with advanced security and backup features.",
-        "price": "$12",
+        "price": "12",
         "period": "month",
         "tagType": "Storage",
         "features": [

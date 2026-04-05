@@ -5,7 +5,7 @@ import { IoPlayOutline } from "react-icons/io5";
 
 const HeroBanner = () => {
   return (
-    <div className="hero bg-base-200 h-[60vh]">
+    <div className="hero bg-base-200 lg:h-[60vh]">
       <div className="hero-content flex-col md:flex-row-reverse container mx-auto">
         <img
           src={BannerImg}
