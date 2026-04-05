@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Highlight = () => {
     return (
         <div>
@@ -14,7 +12,7 @@ const Highlight = () => {
                             </p>
                         </div>
 
-                        <div class="divider divider-horizontal"></div>
+                        <div className="divider divider-horizontal"></div>
 
                         <div className="space-y-2">
                             <h2 className="text-5xl font-bold text-white">200+</h2>
@@ -23,7 +21,7 @@ const Highlight = () => {
                             </p>
                         </div>
 
-                        <div class="divider divider-horizontal"></div>
+                        <div className="divider divider-horizontal"></div>
 
                         <div className="space-y-2">
                             <h2 className="text-5xl font-bold text-white">4.9</h2>

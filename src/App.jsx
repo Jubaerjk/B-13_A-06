@@ -6,6 +6,8 @@ import Highlight from './components/highlight/Highlight'
 import Product from './components/products/Product'
 import Process from './components/process/Process'
 import Pricing from './components/pricing/Pricing'
+import Article from './components/article/Article'
+import Footer from './components/footer/Footer'
 
 
 // Fetching data from JSON files
@@ -48,6 +50,10 @@ function App() {
       <Suspense fallback={<div><span className="loading loading-spinner text-accent"></span></div>}>
         <Pricing pricingDataPromise={pricingDataPromise} />
       </Suspense>
+
+      <Article />
+
+      <Footer />
 
     </>
   )

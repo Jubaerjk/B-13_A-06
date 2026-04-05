@@ -15,35 +15,23 @@ const Navbar = ({ cartNav }) => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                {" "}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
+                />
               </svg>
             </div>
             <ul
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font-semibold opacity-90"
             >
-              <li>
-                <a>Products</a>
-              </li>
-              <li>
-                <a>Features</a>
-              </li>
-              <li>
-                <a>Pricing</a>
-              </li>
-              <li>
-                <a>Testimonials</a>
-              </li>
-
-              <li>
-                <a>FAQ</a>
-              </li>
+              <li><a>Products</a></li>
+              <li><a>Features</a></li>
+              <li><a>Pricing</a></li>
+              <li><a>Testimonials</a></li>
+              <li><a>FAQ</a></li>
             </ul>
           </div>
           <a className="text-2xl font-bold bg-linear-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent">
@@ -54,33 +42,18 @@ const Navbar = ({ cartNav }) => {
         {/* Nav Center */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-semibold opacity-90">
-            <li>
-              <a>Products</a>
-            </li>
-            <li>
-              <a>Features</a>
-            </li>
-            <li>
-              <a>Pricing</a>
-            </li>
-            <li>
-              <a>Testimonials</a>
-            </li>
-
-            <li>
-              <a>FAQ</a>
-            </li>
+            <li><a>Products</a></li>
+            <li><a>Features</a></li>
+            <li><a>Pricing</a></li>
+            <li><a>Testimonials</a></li>
+            <li><a>FAQ</a></li>
           </ul>
         </div>
 
         {/* Nav End */}
         <div className="navbar-end flex gap-4">
           <div className="dropdown dropdown-end">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost btn-circle"
-            >
+            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -89,13 +62,12 @@ const Navbar = ({ cartNav }) => {
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  {" "}
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />{" "}
+                  />
                 </svg>
                 <span className="badge badge-sm indicator-item">{cartNav}</span>
               </div>
@@ -105,7 +77,9 @@ const Navbar = ({ cartNav }) => {
               className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
             >
               <div className="card-body">
-                <span className="text-lg font-bold text-center">{cartNav} Items</span>
+                <span className="text-lg font-bold text-center">
+                  {cartNav} Items
+                </span>
                 <div className="card-actions">
                   <button className="btn btn-primary btn-block">
                     View cart
@@ -114,9 +88,7 @@ const Navbar = ({ cartNav }) => {
               </div>
             </div>
           </div>
-          <a href="" class="font-semibold">
-            Login
-          </a>
+          <a href="" className="font-semibold">Login</a>
           <a className="btn text-white font-semibold rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa]">
             Get Started
           </a>
@@ -127,3 +99,4 @@ const Navbar = ({ cartNav }) => {
 };
 
 export default Navbar;
+
