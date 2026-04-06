@@ -1,5 +1,6 @@
-import React from 'react'
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+
+import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { PiInstagramLogoFill } from "react-icons/pi";
 
 const Footer = () => {
     return (
@@ -37,7 +38,7 @@ const Footer = () => {
                         <h6 className="footer-title">Social</h6>
                         <div className='flex gap-2'>
                             <a className="link link-hover bg-white text-black p-2 rounded-full"><FaFacebook /></a>
-                            <a className="link link-hover bg-white text-black p-2 rounded-full"><FaInstagram /></a>
+                            <a className="link link-hover bg-white text-black p-2 rounded-full"><PiInstagramLogoFill /></a>
                             <a className="link link-hover bg-white text-black p-2 rounded-full"><FaTwitter /></a>
                         </div>
                     </nav>
