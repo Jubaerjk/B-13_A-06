@@ -8,6 +8,8 @@ import Process from './components/process/Process'
 import Pricing from './components/pricing/Pricing'
 import Article from './components/article/Article'
 import Footer from './components/footer/Footer'
+import { ToastContainer } from 'react-toastify';
+
 
 
 // Fetching data from JSON files
@@ -54,6 +56,8 @@ function App() {
       <Article />
 
       <Footer />
+
+      <ToastContainer />
 
     </>
   )

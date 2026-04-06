@@ -1,4 +1,5 @@
 import React from 'react'
+import { toast } from 'react-toastify';
 
 const CartProduct = ({ selectedProduct, setSelectedProduct, setCartNav }) => {
     const totalPrice = selectedProduct.reduce(
@@ -10,6 +11,12 @@ const CartProduct = ({ selectedProduct, setSelectedProduct, setCartNav }) => {
         setSelectedProduct(selectedProduct.filter((_, i) => i !== index));
         setCartNav(prev => prev - 1);
 
+    }
+
+    const handleCheckout = () => {
+        toast.success('Checkout successful');
+        setSelectedProduct([]);
+        setCartNav(0);
     }
 
     return (
@@ -51,7 +58,7 @@ const CartProduct = ({ selectedProduct, setSelectedProduct, setCartNav }) => {
                             <p className='text-[#627382] font-semibold'>Total:</p>
                             <p className='text-[#101727] font-bold'>${totalPrice}</p>
                         </div>
-                        <button className='btn bg-linear-to-l from-[#9514FA] to-[#53008F] text-white rounded-full w-full my-4'>Proceed to Checkout</button>
+                        <button onClick={handleCheckout} className='btn bg-linear-to-l from-[#9514FA] to-[#53008F] text-white rounded-full w-full my-4'>Proceed to Checkout</button>
                     </div>
                 )}
             </div>
