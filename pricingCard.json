@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Basic",
+        "description": "Perfect for individuals just getting started.",
+        "price": 19,
+        "duration": "monthly",
+        "services": [
+            "Access to core features",
+            "Email support",
+            "Single user license"
+        ]
+    },
+    {
+        "name": "Pro",
+        "description": "Ideal for small teams needing more flexibility.",
+        "price": 49,
+        "duration": "monthly",
+        "services": [
+            "All Basic features",
+            "Priority support",
+            "Up to 5 team members",
+            "Advanced analytics"
+        ]
+    },
+    {
+        "name": "Enterprise",
+        "description": "Designed for large organizations with custom needs.",
+        "price": 99,
+        "duration": "monthly",
+        "services": [
+            "All Pro features",
+            "Dedicated account manager",
+            "Unlimited team members",
+            "Custom integrations",
+            "24/7 support"
+        ]
+    }
+]
