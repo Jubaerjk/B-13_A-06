@@ -8,8 +8,9 @@ const HeroBanner = () => {
     <div className="hero bg-base-200 lg:h-[60vh] py-10">
       <div className="hero-content flex-col md:flex-row-reverse container mx-auto">
         <img
+
           src={BannerImg}
-          className="max-w-sm rounded-lg shadow-sm"
+          className="max-w-sm rounded-lg shadow-sm max-h-96 block"
           alt="Hero Banner"
         />
 
@@ -18,7 +19,7 @@ const HeroBanner = () => {
           <button className="btn btn-sm bg-[#E1E7FF] text-[#9514FA] rounded-full">
             <FaCircle /> New: AI-Powered Tools Available
           </button>
-          <h1 className="text-6xl font-extrabold text-[#101727]">
+          <h1 className="text-5xl font-extrabold text-[#101727]">
             Supercharge Your Digital Workflow
           </h1>
           <p className="py-6 text-[#475467] text-[18px]">

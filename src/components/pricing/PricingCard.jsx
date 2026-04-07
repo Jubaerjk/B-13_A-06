@@ -4,7 +4,7 @@ const PricingCard = ({ pricingData }) => {
     return (
         <>
             {name !== "Pro" ? (
-                <div className="card bg-[#F9FAFC] shadow-sm">
+                <div className="card w-96 bg-[#F9FAFC] shadow-sm">
                     <div className="card-body relative flex flex-col gap-6 p-6">
 
                         {/* Card Header */}
@@ -28,7 +28,7 @@ const PricingCard = ({ pricingData }) => {
                     </div>
                 </div>
             ) : (
-                <div className="card bg-linear-to-l from-[#9514FA] to-[#5210C4] text-white shadow-sm">
+                <div className="card w-96 bg-linear-to-l from-[#9514FA] to-[#5210C4] text-white shadow-sm">
                     <div className="card-body relative flex flex-col gap-6 p-6">
                         <div className="badge font-medium rounded-full bg-[#FEF3C6] text-[#BB4D00] absolute -top-3 left-1/2 -translate-x-1/2">
                             Popular

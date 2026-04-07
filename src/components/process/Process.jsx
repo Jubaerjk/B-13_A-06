@@ -16,7 +16,7 @@ const Process = () => {
                     </div>
 
                     <div className="process flex justify-center flex-wrap gap-6">
-                        <div className="process-item card bg-base-100 border border-[#E1E7FF] shadow-sm">
+                        <div className="process-item card w-96 bg-base-100 border border-[#E1E7FF] shadow-sm">
                             <div className="card-body">
                                 <div className='flex justify-between'>
                                     <span className="w-6 h-6"></span>

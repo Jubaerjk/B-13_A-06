@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <>
             <div className='bg-[#101727]'>
-                <footer className="container mx-auto footer sm:footer-horizontal text-white py-10">
-                    <aside className='space-y-2'>
+                <footer className="container mx-auto footer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-white py-10 px-6">
+                    <aside className='space-y-2 col-span-2 lg:col-span-1 '>
                         <h4 className='text-2xl font-bold text-white'>DigiTools</h4>
                         <p className='text-[#a5a5a5]'>
                             Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
